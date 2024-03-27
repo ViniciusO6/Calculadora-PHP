@@ -12,12 +12,12 @@
 
 <?php
 
-    $number1;
-    $number2;
+    $number1 = null;
+    $number2 = null;
     $resultado = null;
     $calcular = 'somar';
 
-    if(isset( $_GET['num1'],  $_GET['num2'])){
+    if(isset($_GET['num1']) &&  isset($_GET['num2'])){
         $number1 = $_GET['num1'];
         $number2 = $_GET['num2'];
         $calcular = $_GET['calcular'];
@@ -35,7 +35,9 @@
                 $resultado = $number1 / $number2;
             break;
         }
-    }
+    }else
+        
+    
 
 
 ?>
